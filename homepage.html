@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta image.pnghttp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/singInUp.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="images/browser-logo.jpg" />
+    <title>FC Bayern Munich</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="homepage.html"><img src="img/logo.png" alt="">
+                    <h2>FC Bayern Munich</h2>
+                </a>
+            </div>
+            <div class="signUp">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="signInUpForm">
+                                    <div class="title-text">
+                                        <div class="title login">Login </div>
+                                        <div class="title signup">Signup </div>
+                                    </div>
+                                    <div class="form-container">
+                                        <div class="slide-controls">
+                                            <input type="radio" name="slide" id="login" checked>
+                                            <input type="radio" name="slide" id="signup">
+                                            <label for="login" class="slide login">Login</label>
+                                            <label for="signup" class="slide signup">SignUp</label>
+                                            <div class="slider-tab"></div>
+                                        </div>
+                                        <div class="form-inner">
+                                            <form action="#" class="login" id="validation-form-logIn">
+
+                                                <div class="field">
+                                                    <input name="lemail" id="lemail" type="text"
+                                                        placeholder="Email Address" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input name="lpassword" id="lpassword" type="password"
+                                                        placeholder="Password" required>
+                                                </div>
+                                                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                                                <div class="field btn">
+                                                    <div class="btn-layer"></div>
+                                                    <input type="submit" value="Login">
+                                                </div>
+                                                <h6 class="or">or</h6>
+                                                <div class="orlogin">
+                                                    
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        <i class="fa-brands fa-twitter"></i>
+                                                    </button>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        <i class="fa-brands fa-facebook"></i>
+                                                    </button>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        <i class="fa-brands fa-instagram"></i>
+                                                    </button>
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        <i class="fa-brands fa-google"></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+
+
+                                            <form action="confirmation.php" class="signup" name="signup"
+                                                id="validation-form-signUp" method="post"
+                                                onsubmit="return validateForm()">
+                                                <div class="field flname">
+                                                    <input name="fname" id="fname" type="text" placeholder="First Name"
+                                                        required>
+
+                                                    <input name="lname" id="lname" type="text" placeholder="Last Name"
+                                                        required>
+                                                </div>
+                                                <div class="error" id="fnameErr"></div>
+                                                <div class="error" id="lnameErr"></div>
+                                                <div class="field">
+                                                    <input type="text" id="email" name="email"
+                                                        placeholder="Email Address" required>
+                                                </div>
+                                                <div class="error" id="emailErr"></div>
+                                                <div class="field">
+                                                    <input type="password" name="password" id="password"
+                                                        placeholder="Password" required>
+
+                                                </div>
+                                                <div class="error" id="passErr"></div>
+                                                <!-- <div class="field">
+                                                    <input type="password" name="confirm_password" id="confirm_password"
+                                                        placeholder="Confirm password" required>
+
+                                                </div>
+                                                <div class="error" id="passErr1"></div> -->
+
+                                                <div class="field btn">
+                                                    <div class="btn-layer signUp-btn"></div>
+                                                    <input type="submit" value="Signup">
+                                                </div>
+                                                
+                                                <div class=" btn-layer clear-data">
+                                                    <input type="submit" value="clear" onclick="clearData()">
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-nav">
+        <div class="container">
+            <!-- ul>(li>a)*8 -->
+            <ul>
+                <li><a href="homepage.html">FC Bayern</a></li>
+                <li><a href="#fcb-news">News</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="ticket.html">Ticket</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="https://fcbayern.com/store/en-zz?emsrc=coop&refID=header-link%2Fzz">Shopping</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="parent1">
+        <div class="showcase">
+        </div>
+    </div>
+
+
+    <div class="fcb-news" id="fcb-news">
+        <div class="container">
+            <div class="titles">
+                <h2>News</h2>
+            </div>
+
+            <div class="filters" id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('news')"> News</button>
+                <button class="btn" onclick="filterSelection('club')"> Club</button>
+                <button class="btn" onclick="filterSelection('bundesliga')"> Bundesliga</button>
+                <button class="btn" onclick="filterSelection('champions-league')"> Champions League</button>
+            </div>
+            <div class="all-news">
+                <div class="filterDiv news">
+                    <div class="parent">
+                        <div class="news1">
+
+                        </div>
+                        <div class="news2">
+
+                        </div>
+                        <div class="news3">
+
+                            <img src="newsimgs/davies-injured.jpg" class="card-img-top" alt="gallery-club">
+                            <a
+                                href="https://fcbayern.com/en/news/2022/11/alphonso-davies-goes-off-injured-in-3-2-win-at-hertha-berlin">
+                                <div class="card-body">
+                                    <h5 class="card-title">In 3-2 win at Hertha</h5>
+                                    <p class="card-text">Alphonso davies goes off injured</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news4">
+                            <img src="newsimgs/hertha-fcbayern.jpg" class="card-img-top" alt="gallery-club">
+                            <a href="https://fcbayern.com/en/news/2022/11/reaction-to-hertha-berlin-vs.-fc-bayern">
+                                <div class="card-body">
+                                    <h5 class="card-title">Narrow victory in Berlin</h5>
+                                    <p class="card-text">Bayern edge thrilling game at Hertha</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news5">
+                            <img src="newsimgs/nagelsmann.jpg" class="card-img-top" alt="gallery-club">
+                            <a href="https://fcbayern.com/en/news/2022/11/reaction-to-hertha-berlin-vs.-fc-bayern">
+                                <div class="card-body">
+                                    <h5 class="card-title">After playing Hertha Berlin</h5>
+                                    <p class="card-text">Nagelsmann: In the end it was deserved</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterDiv club">
+                    <div class="parent">
+                        <div class="news1 club1">
+
+                        </div>
+                        <div class="news2 club2">
+
+                        </div>
+                        <div class="news3">
+                            <img src="newsimgs/lahm-rummenigge.jpg" class="card-img-top" alt="gallery-club">
+                            <a
+                                href="https://fcbayern.com/en/news/2022/10/rummenigge-and-lahm-inducted-into-german-football-hall-of-fame">
+                                <div class="card-body">
+                                    <h5 class="card-title">German Fa Honours Bayern Greats</h5>
+                                    <p class="card-text">Rummenigge and Lahm inducted into Hall of Fame</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news4">
+                            <img src="newsimgs/pizarro-elber.jpg" class="card-img-top" alt="gallery-club">
+                            <a href="https://fcbayern.com/en/news/2022/10/derby-legends-on-matches-against-1860-munich">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ribery, Pizarro and Co.</h5>
+                                    <p class="card-text">Derby legend on matches against 1860 Munich</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news5">
+                            <img src="newsimgs/pizarro-elber-legends2.jpg" class="card-img-top" alt="gallery-club">
+                            <a
+                                href="https://fcbayern.com/en/news/2022/10/fc-bayern-legends-squad-announced-for-derby-against-1860-munich   ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Elber, Pizarro and more</h5>
+                                    <p class="card-text">Fc Bayern Legends derby announced for derby against 1860</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterDiv bundesliga">
+                    <div class="parent">
+                        <div class="news1 bundesliga1">
+
+                        </div>
+                        <div class="news2 bundesliga2">
+
+                        </div>
+                        <div class="news3">
+                            <img src="newsimgs/nagelsmann-interview.jpg" class="card-img-top" alt="gallery-club">
+                            <a href="https://fcbayern.com/en/news/2022/11/reaction-to-hertha-berlin-vs.-fc-bayern">
+                                <div class="card-body">
+                                    <h5 class="card-title">After Hertha Berlin VS Bayern</h5>
+                                    <p class="card-text">Nagelsmann: We put our all into it</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news4">
+                            <img src="newsimgs/hertha-fcbayern.jpg" class="card-img-top" alt="gallery-club">
+                            <a
+                                href="https://fcbayern.com/fcbayerntv/en/videos/2022/11/video-highlights-hertha-berlin-2-3-fc-bayern">
+                                <div class="card-body">
+                                    <h5 class="card-title">Narrow victory in Berlin</h5>
+                                    <p class="card-text">Bayern edge thrilling game at Hertha</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news5">
+                            <img src="newsimgs/neuer-in-goal.jpg" class="card-img-top" alt="gallery-club">
+                            <a
+                                href="https://fcbayern.com/fcbayerntv/en/videos/2022/11/manuel-neuer-interview-ahead-of-comeback-pleased-to-be-with-the-team-again">
+                                <div class="card-body">
+                                    <h5 class="card-title">At Hertha on Saturday</h5>
+                                    <p class="card-text">Bayern go to Berlin with Neuer in goal</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filterDiv champions-league">
+                    <div class="parent">
+                        <div class="news1 champions1">
+                            <a href="#"></a>
+                        </div>
+                        <div class="news2 champions2">
+                            <a href=""></a>
+                        </div>
+                        <div class="news3">
+
+                            <img src="newsimgs/motm-choupe.jpg" class="card-img-top" alt="gallery-club">
+                            <a
+                                href="https://fcbayern.com/en/news/2022/11/man-of-the-match-and-man-of-the-hour-choupo-moting">
+                                <div class="card-body">
+                                    <h5 class="card-title">Goals in sic straight games</h5>
+                                    <p class="card-text">Man Of The Match and man of the hour: Choupe-Moting</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="news4">
+                            <img src="newsimgs/sven-ulreich.jpg" class="card-img-top" alt="gallery-club">
+                            <div class="card-body">
+                                <a href="https://fcbayern.com/en/news/2022/11/reaction-fc-bayern-vs.-inter-milan">
+                                    <h5 class="card-title">Reaction to FC Bayern VS Inter </h5>
+                                    <p class="card-text">Sven Ulreich: We wanted to send a message again</p>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="news5">
+                            <img src="newsimgs/interviews-coman.jpg" class="card-img-top" alt="gallery-club">
+                            <a
+                                href="https://fcbayern.com/fcbayerntv/en/videos/2022/11/interviews-fc-bayern-inter-milan-champions-league">
+                                <div class="card-body">
+                                    <h5 class="card-title">After game against Inter</h5>
+                                    <p class="card-text">Kingsley Coman: We're very proud for the success today</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <div class="container">
+            <div class="news-leftside">
+                <h2>NEWSLETTER</h2>
+                <div class="inputs">
+                    <input type="email" name="email" id="" class="input" placeholder="E-Mail Address">
+                    <select class="form-select input" aria-label="Default select example">
+                        <option selected>Select Newsletter</option>
+                        <option value="1">FC Bayern Newsletter</option>
+                        <option value="2">Store Newsletter</option>
+                    </select>
+                    <button>Subscribe</button>
+                </div>
+                <p class="news-privacy-policy">You can revoke your consent at any time by sending an email to
+                    feedback-newsletter@fcbayern.com. We
+                    send our newsletter in accordance with our privacy policy. If you are a minor, you confirm with your
+                    registration that you have the consent of your parent or legal guardian to receive the newsletter.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="advertisement">
+        <div class="container">
+            <div class="giff">
+                <img src="ads/audi-frame.gif" alt="" id="gif1">
+            </div>
+            <div class="giff">
+                <img src="ads/frame-bayern-giff.gif" alt="" id="gif2">
+            </div>
+            <div class="giff">
+                <img src="ads/audi-frame.gif" alt="" id="gif3">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="titles">
+        <div class="container">
+            <h2>Club</h2>
+        </div>
+    </div>
+
+    <div class="club-cards">
+        <div class="container">
+            <a href="#">
+                <div class="card">
+                    <img src="club/gallery-club.jpg" class="card-img-top" alt="gallery-club">
+                    <div class="card-body">
+                        <h5 class="card-title">GALLERY</h5>
+                        <p class="card-text">Best photos of the month!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="history.html">
+                <div class="card">
+                    <img src="club/history-club.jpg" class="card-img-top" alt="history">
+                    <div class="card-body">
+                        <h5 class="card-title">MILESTONES</h5>
+                        <p class="card-text">The historic developement of FC Bayern</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://fcbayern.com/store/en-zz?emsrc=coop&refID=header-link%2Fzz">
+                <div class="card">
+                    <img src="club/fanshop-club.jpg" class="card-img-top" alt="fanshop">
+                    <div class="card-body">
+                        <h5 class="card-title">FAN SHOP</h5>
+                        <p class="card-text">Only if you are a member</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="titles">
+        <div class="container">
+            <h2>Trophies</h2>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="carousel owl-carousel">
+            <div class="card card-1">
+                <img src="trophies/ucl.png" alt="UCL cup">
+                <p class="trophie-title">Champions League</p>
+                <p class="nr-trophies">6</p>
+            </div>
+            <div class="card card-2">
+                <img src="trophies/uefa-cup.png" alt="UEFA cup">
+                <p class="trophie-title">UEFA Cup</p>
+                <p class="nr-trophies">1</p>
+            </div>
+            <div class="card card-3">
+                <img src="trophies/UEFA-Cup-Winners-Cup.png" alt="">
+                <p class="trophie-title">UEFA Cup Winners, Cup</p>
+                <p class="nr-trophies">1</p>
+            </div>
+            <div class="card card-4">
+                <img src="trophies/Intercontinental_cup.png" alt="Intercontinental">
+                <p class="trophie-title">Intercontinental Cup</p>
+                <p class="nr-trophies">2</p>
+            </div>
+            <div class="card card-5">
+                <img src="trophies/fifa-worldcup.png" alt="Fifa club worldcup">
+                <p class="trophie-title">FIFA Club World Cup</p>
+                <p class="nr-trophies">2</p>
+            </div>
+            <div class="card card-6">
+                <img src="trophies/uefa-supercup.png" alt="uefa-supercup">
+                <p class="trophie-title">UEFA Supercup</p>
+                <p class="nr-trophies">2</p>
+            </div>
+            <div class="card card-7">
+                <img src="trophies/championship.png" alt="">
+                <p class="trophie-title">German Championship</p>
+                <p class="nr-trophies">32</p>
+            </div>
+            <div class="card card-8">
+                <img src="trophies/Dfl-super-cup-pokal.png" alt="">
+                <p class="trophie-title">German Supercup</p>
+                <p class="nr-trophies">11</p>
+            </div>
+            <div class="card card-9">
+                <img src="trophies/Germany DFB-Pokal Trophy.png" alt="">
+                <p class="trophie-title">DFB German Cup</p>
+                <p class="nr-trophies">20</p>
+            </div>
+            <div class="card card-10">
+                <img src="trophies/league cup.png" alt="League cup">
+                <p class="trophie-title">League Cup</p>
+                <p class="nr-trophies">6</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="bayern-logo">
+                <img src="partnerlogos/fcb-logo.svg" alt="">
+            </div>
+            <div class="partner">
+                <h3>Partner</h3>
+            </div>
+            <div class="partner-grid">
+                <div class="logorow1">
+                    <div class="logo"><a href="https://www.telekom.com/en"><img src="partnerlogos/Telekom (1).svg"
+                                alt="Telekom"></a></div>
+                    <div class="logo"><a href="https://www.adidas.co.uk/football"><img src="partnerlogos/Audi.svg"
+                                alt="Audi"></a></div>
+                    <div class="logo"><a href="https://www.audi.com/en/company/home-of-football.html"><img
+                                src="partnerlogos/Adidas.svg" alt="Adidas"></a></div>
+                    <div class="logo"><a href="https://www.allianz.de/"><img src="partnerlogos/Allianz (2).svg"
+                                alt="Allianz"></a></div>
+                </div>
+                <div class="logorow2">
+                    <div class="logo"><a href="https://www.hypovereinsbank.de/hvb/privatkunden"><img
+                                src="partnerlogos/Hypovereinsbank.svg" alt="Hypovereinsbank"></a></div>
+                    <div class="logo"><a href="https://www.qatarairways.com/en/homepage.html"><img
+                                src="partnerlogos/Qatarairways.svg" alt="Qatarairways"></a></div>
+                    <div class="logo"><a href="https://www.konami.com/wepes/2021/eu/en/ps4/partner/bayern"><img
+                                src="partnerlogos/Konami.svg" alt="Konami"></a></div>
+                    <div class="logo"><a href="https://www.paulaner.de/"><img src="partnerlogos/paulaner__148x22.svg"
+                                alt="Pauler"></a></div>
+                </div>
+            </div>
+
+            <div class="uefa">
+
+                <div class="left-footer">
+                    <p> &copy; FC Bayern München AG 2000 – 2022</p>
+                    <div>
+                        <a href="https://fcbayern.com/en/imprint">Imprint</a>
+                        <a href="https://fcbayern.com/en/privacy">Privacy Policy</a>
+                        <a href="https://fcbayern.com/en/terms-and-conditions">Terms and Conditions</a>
+                        <a href="https://fcbayern.com/en/faq">FAQ</a>
+                        <a href="https://fcbayern.com/en/contact">Contact</a>
+                        <a href="https://fcbayern.com/kuendigung">Terminate contracts here</a>
+                        <a href="https://fcbayern.com/en">Cookie-Settings</a>
+                    </div>
+                </div>
+
+                <div class="right-logos">
+                    <div class="logo"><a href="https://allianz-arena.com/en"><img src="partnerlogos/Allianzarena.svg"
+                                alt=""></a></div>
+                    <div class="logo"><a href="https://www.ecaeurope.com/"><img src="partnerlogos/Eca.svg" alt=""></a>
+                    </div>
+                    <div class="logo"><a href="https://www.bundesliga.com/en/bundesliga"><img
+                                src="partnerlogos/Bundesliga.svg" alt=""></a></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <ul id="notes"></ul>
+
+    <script src="js/homepage.js"></script>
+    <script src="js/news.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

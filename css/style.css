@@ -1,0 +1,197 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #121F38;
+}
+
+ul{
+  margin: 0;
+}
+
+.container{
+  width: 95% !important ; 
+  margin: 0 auto;
+}
+
+nav{
+  background-color: #DC052D;
+  padding: 1rem 0;
+  
+}
+
+nav h2{
+  font-size: 1.4rem;
+}
+
+nav img{
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+nav .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+nav .logo a{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav img{
+  margin-right: 0.5rem ;
+}
+
+.signUp{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signUp button{
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+}
+
+.signUp button:hover i{
+  color: #C60428;
+
+}
+
+.signUp button:hover{
+  background-color: #fff;
+}
+
+.or{
+  padding-top: 1rem;
+}
+
+.signUp i{
+  color: #fff;
+  font-size: 1.1rem;
+}
+.orlogin{
+  display: inline;
+}
+.orlogin i{
+  color: #5404E5;
+  font-size: 3rem;
+}
+.orlogin button{
+  border: none;
+  
+  width: 70px;
+  height: 70px;
+}
+
+.main-nav{
+  background-color:rgb(198, 4, 40);
+}
+
+.main-nav ul{
+  display: flex;
+  list-style: none;
+  grid-gap: 1.1rem;
+}
+
+.main-nav ul a:hover {
+  border-bottom: 2px solid white;
+  padding: 5px 0;
+}
+.main-nav ul a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-nav ul li{
+  padding: 7px 0;
+}
+
+.calendar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000E29;
+  padding: 7px 0;
+  margin-bottom: 40px;
+}
+.calendar ul{
+  display: flex;
+  list-style: none;
+  grid-column-gap: 1rem;
+}
+
+.calendar ul a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.calendari{
+  margin-bottom: 50px;
+}
+
+.matchplan-title{
+  color: #fff;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+.matchplan-title .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.matches table{
+  color: #fff;
+  border-color: none !important;
+}
+
+.table{
+  border-color: none !important;
+}
+
+.matches table .first-row{
+  padding: 4rem 0;
+  text-align: center;
+}
+.matches table td{
+  text-align: center;
+
+}
+.matches img{
+  width: 30px;
+  height: 30px;
+}
+
+.matches .container{
+  width: 75% !important;
+}
+
+.date{
+  color: #737B8A;
+  font-size: small;
+}
+
+.matches table td:first-child, .matches table td:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.matches table td :nth-child(2){
+  border: none !important ;
+}
+
+.result{
+  padding: 31px !important;
+  border: 0 !important;
+  box-shadow:inset 0px -1px #fff !important;
+}

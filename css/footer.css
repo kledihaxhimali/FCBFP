@@ -1,0 +1,73 @@
+footer{
+    background-color: #dc052d;
+    padding: 10px 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bayern-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.partner-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    grid-gap: 10px;
+    margin-bottom: 2rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logorow1, .logorow2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logorow1{
+    grid-column-gap: 28px;
+}
+.logorow2{
+    grid-column-gap: 40px;
+    padding-bottom: 35px;
+    padding-top: 15px;
+}
+
+.right-logos{
+    display: flex;
+    justify-content: flex-end;
+    grid-column-gap: 18px;
+}
+
+.right-logos img{
+    width: 35px;
+    object-fit: contain;
+}
+
+
+.left-footer, .left-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.uefa{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+

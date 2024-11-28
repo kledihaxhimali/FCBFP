@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/singInUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Calendar</title>
+
+</head>
+
+<body>
+    
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="homepage.html"><img src="img/logo.png" alt="">
+                    <h2>FC Bayern Munich</h2>
+                </a>
+            </div>
+            <div class="signUp">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="signInUpForm">
+                                    <div class="title-text">
+                                        <div class="title login">Login </div>
+                                        <div class="title signup">Signup </div>
+                                    </div>
+                                    <div class="form-container">
+                                        <div class="slide-controls">
+                                            <input type="radio" name="slide" id="login" checked>
+                                            <input type="radio" name="slide" id="signup">
+                                            <label for="login" class="slide login">Login</label>
+                                            <label for="signup" class="slide signup">Signup</label>
+                                            <div class="slider-tab"></div>
+                                        </div>
+                                        <div class="form-inner">
+                                            <form action="#" class="login">
+                                                <div class="field">
+                                                    <input type="text" placeholder="Email Address" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                                                <div class="field btn">
+                                                    <div class="btn-layer"></div>
+                                                    <input type="submit" value="Login">
+                                                </div>
+                                            </form>
+                                            <form action="#" class="signup">
+                                                <div class="field">
+                                                    <input type="text" placeholder="Email Address" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="password" name="password" id="password"
+                                                        placeholder="Password" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="password" name="confirm_password" id="confirm_password"
+                                                        placeholder="Confirm password" required>
+                                                </div>
+                                                <div>
+                                                    <span id='message'></span>
+                                                </div>
+
+                                                <div class="field btn">
+                                                    <div class="btn-layer"></div>
+                                                    <input type="submit" value="Signup">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-nav">
+        <div class="container">
+            <!-- ul>(li>a)*8 -->
+            <ul>
+                <li><a href="homepage.html">FC Bayern</a></li>
+                <li><a href="homepage.html #fcb-news">News</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="ticket.html">Ticket</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="https://fcbayern.com/store/en-zz?emsrc=coop&refID=header-link%2Fzz">Shopping</a></li>                
+            </ul>
+        </div>
+    </div>
+
+    <div class="calendar">
+        <ul>
+            <li><a href="#july">Jul</a></li>
+            <li><a href="#august">Aug</a></li>
+            <li><a href="#september">Sep</a></li>
+            <li><a href="#october">Oct</a></li>
+            <li><a href="#november">Nov</a></li>
+            <li><a href="#december">Dec</a></li>
+            <li><a href="#january">Jan</a></li>
+            <li><a href="#feb">Fed</a></li>
+            <li><a href="#march">Mar</a></li>
+            <li><a href="#april">Apr</a></li>
+            <li><a href="#may">May</a></li>
+            <li><a href="#june">Jun</a></li>
+        </ul>
+
+    </div>
+
+    <div class="matchplan-title">
+        <div class="container">
+            <h3>MATCHPLAN SEASON 2022/2023</h3>
+        </div>
+    </div>
+
+    <div class="matches">
+        <div class="container">
+            <div class="calendari" id="july">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">July</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Th, 21/07/2022, 01:30
+                                </p>
+                                <p class="name">
+                                    Washington D.C. Utd
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/dcunited.png" alt="">
+                                <span>2:6</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Audi Football Submit, Friendly
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Su, 24/07/2022, 01:00
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>0:1</span>
+                                <img src="img/man city.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Audi Football Submit, Friendly
+                                </p>
+                                <p class="name">
+                                    Manchester City
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 21/08/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    RB Leipzig
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/leipzig.png" alt="">
+                                <span>3:5</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Supercup, Final
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="august">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">August</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 05/08/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    Eintracht Frankfurt
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/frankfurt.png" alt="">
+                                <span>1:6</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 1
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 14/08/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>2:0</span>
+                                <img src="img/wolfsburg.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 2
+                                </p>
+                                <p class="name">
+                                    Vfl Wolfsburg
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 21/08/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    Vfl Bochum 1848
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/bochum.png" alt="">
+                                <span>0:7</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 3
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 27/08/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>1:1</span>
+                                <img src="img/borussiamunch.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 4
+                                </p>
+                                <p class="name">
+                                    B Mönchengladbach
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    We, 31/08/2022, 20:46 CEST
+                                </p>
+                                <p class="name">
+                                    FC Viktoria Köln
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/victoriakoln.png" alt="">
+                                <span>0:5</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    DFB Cup, Round1
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="september">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">September</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Sat, 03/09/2022, 15:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Union Berlin
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/unionberlin.png" alt="">
+                                <span>1:1</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 5
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Wed, 07/09/2022, 21:00 CEST
+                                </p>
+                                <p class="name">
+                                    Inter Milan
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/inter.png" alt="">
+                                <span>0:2</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Champions League, Matchday 1
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 10/08/2022, 15:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>2:2</span>
+                                <img src="img/stuttgart.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 6
+                                </p>
+                                <p class="name">
+                                    VfB Stuttgart
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Tue, 13/09/2022, 21:00 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>2:0</span>
+                                <img src="img/barca.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Champions League, Matchday 2
+                                </p>
+                                <p class="name">
+                                    FC Barcelona
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Sa, 17/09/2022, 15:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Augsburg
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/ausburg.png" alt="">
+                                <span>1:0</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 7
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 30/09/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>4:0</span>
+                                <img src="img/bayer04.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 8
+                                </p>
+                                <p class="name">
+                                    Bayer 04 Leverkusen
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="october">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">October</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Tue, 04/10/2022, 21:00 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>5:0</span>
+                                <img src="img/victoriaplzen.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Champions League, Matchday 3
+                                </p>
+                                <p class="name">
+                                    FC Viktoria Plzeň
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 08/10/2022, 18:45 CEST
+                                </p>
+                                <p class="name">
+                                    Borussia Dortmund
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/dortmund.png" alt="">
+                                <span>1:6</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 9
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Wed, 12/10/2022, 21:00 CEST
+                                </p>
+                                <p class="name">
+                                    FC Viktoria Plzeň
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/victoriaplzen.png" alt="">
+                                <span>2:4</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Champions League, Matchday 4
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Sun, 16/10/2022, 19:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>5:0</span>
+                                <img src="img/freiburg.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 10
+                                </p>
+                                <p class="name">
+                                    SC Freiburg
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Wed, 19/10/2022, 20:45 CEST
+                                </p>
+                                <p class="name">
+                                    FC Augsburg
+                                </p>
+                            </td>
+                            <td>
+                                <img src="img/ausburg.png" alt="">
+                                <span>2:5</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    DFB Cup, Round 2
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 27/08/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    TSG 1899 Hoffenheim
+                                </p>
+                            </td>
+                            <td>
+                                <img src="img/logo.png" alt="">
+                                <span>0:2</span>
+                                <img src="img/hoffenheim.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 11
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    We, 26/10/22, 21:00 CEST
+                                </p>
+                                <p class="name">
+                                    FC Barcelona
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/barca.png" alt="">
+                                <span>0:3</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Champions League, Matchday 5
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Sat, 29/10/2022, 15:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>5:0</span>
+                                <img src="img/mainz.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 12
+                                </p>
+                                <p class="name">
+                                    FSV Mainz
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="november">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">November</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Tue, 01/11/2022, 21:00 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/inter.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Champions League, Matchday 6
+                                </p>
+                                <p class="name">
+                                    Inter Milan
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Sat, 05/11/2022, 15:30 CEST
+                                </p>
+                                <p class="name">
+                                    Hertha BSC Berlin
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/hertha.png" alt="">
+                                <span>-</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 13
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Tue, 08/11/2022, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/werderBremen.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 14
+                                </p>
+                                <p class="name">
+                                    SV Werder Bremen
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    SAt, 12/11/2022, 18:30 CEST
+                                </p>
+                                <p class="name">
+                                    FC Schalke 04
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/schalke04.png" alt="">
+                                <span>-</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 15
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="december">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">December</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>
+                                <p>No matches scheduled</p>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="january">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">January</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Fri, 20/01/2023, 20:30 CEST
+                                </p>
+                                <p class="name">
+                                    RB Leipzig
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/leipzig.png" alt="">
+                                <span> - </span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 16
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    24/01/2023-25/01/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/koln.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 17
+                                </p>
+                                <p class="name">
+                                    FC Köln
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    27/01/2023 - 29/01/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/frankfurt.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 18
+                                </p>
+                                <p class="name">
+                                    Eintracht Frankfurt
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="feb">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">February</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    03/02/2023- 05/02/2023
+                                </p>
+                                <p class="name">
+                                    Vfl Wolfsburg
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/wolfsburg.png" alt="">
+                                <span> - </span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 19
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    10/02/2023-12/02/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span> - </span>
+                                <img src="img/bochum.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 20
+                                </p>
+                                <p class="name">
+                                    Vfl Bochum 1848
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    24/01/2023-25/01/2023
+                                </p>
+                                <p class="name">
+                                    B Mönchengladbach
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/borussiamunch.png" alt="">
+                                <span>-</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 21
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    24/02/2023 - 26/02/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/unionberlin.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 22
+                                </p>
+                                <p class="name">
+                                    FC Union Berlin
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="march">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">March</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    03/03/2023- 05/03/2023
+                                </p>
+                                <p class="name">
+                                    VfB Stuttgart
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/stuttgart.png" alt="">
+                                <span> - </span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 23
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    10/03/2023-12/03/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span> - </span>
+                                <img src="img/ausburg.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 24
+                                </p>
+                                <p class="name">
+                                    FC Augsburg
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    17/03/2023-19/03/2023
+                                </p>
+                                <p class="name">
+                                    Bayer 04 Leverkusen
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/bayer04.png" alt="">
+                                <span>-</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 25
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    31/03/2023 - 2/04/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/dortmund.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 26
+                                </p>
+                                <p class="name">
+                                    Borussia Dortmund
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="april">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">April</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    08/04/2023-09/04/2023
+                                </p>
+                                <p class="name">
+                                    SC Freiburg
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/freiburg.png" alt="">
+                                <span> - </span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 27
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    14/04/2023- 16/04/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span> - </span>
+                                <img src="img/hoffenheim.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 28
+                                </p>
+                                <p class="name">
+                                    TSG Hoffenheim
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    21/04/2023-23/04/2023
+                                </p>
+                                <p class="name">
+                                    FSV Mainz 05
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/mainz.png" alt="">
+                                <span>-</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 29
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    28/04/2023 - 30/04/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/hertha.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 30
+                                </p>
+                                <p class="name">
+                                    Hertha BSC Berlin
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="may">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">May</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    05/05/2023-07/05/2023
+                                </p>
+                                <p class="name">
+                                    SV Werber Bremen
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/werderBremen.png" alt="">
+                                <span> - </span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 31
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    12/05/2023- 14/05/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span> - </span>
+                                <img src="img/schalke04.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 32
+                                </p>
+                                <p class="name">
+                                    FC schalke 04
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    19/05/2023-21/05/2023
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/logo.png" alt="">
+                                <span>-</span>
+                                <img src="img/leipzig.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 33
+                                </p>
+                                <p class="name">
+                                    RB Leipzig
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="date">
+                                    Sat, 27/05/2023 CEST
+                                </p>
+                                <p class="name">
+                                    FC Köln
+                                </p>
+                            </td>
+                            <td class="result">
+                                <img src="img/koln.png" alt="">
+                                <span>-</span>
+                                <img src="img/logo.png" alt="">
+                            </td>
+
+                            <td>
+                                <p class="date">
+                                    Bundesliga, Matchday 34
+                                </p>
+                                <p class="name">
+                                    FC Bayern Munich
+                                </p>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="calendari" id="june">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">June</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>
+                                <p>No matches scheduled</p>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="bayern-logo">
+                <img src="partnerlogos/fcb-logo.svg" alt="">
+            </div>
+            <div class="partner">
+                <h3>Partner</h3>
+            </div>
+            <div class="partner-grid">
+                <div class="logorow1">
+                    <div class="logo"><a href="https://www.telekom.com/en"><img src="partnerlogos/Telekom (1).svg" alt="Telekom"></a></div>
+                    <div class="logo"><a href="https://www.adidas.co.uk/football"><img src="partnerlogos/Audi.svg" alt="Audi"></a></div>
+                    <div class="logo"><a href="https://www.audi.com/en/company/home-of-football.html"><img src="partnerlogos/Adidas.svg" alt="Adidas"></a></div>
+                    <div class="logo"><a href="https://www.allianz.de/"><img src="partnerlogos/Allianz (2).svg" alt="Allianz"></a></div>
+                </div>
+                <div class="logorow2">
+                    <div class="logo"><a href="https://www.hypovereinsbank.de/hvb/privatkunden"><img src="partnerlogos/Hypovereinsbank.svg" alt="Hypovereinsbank"></a></div>
+                    <div class="logo"><a href="https://www.qatarairways.com/en/homepage.html"><img src="partnerlogos/Qatarairways.svg" alt="Qatarairways"></a></div>
+                    <div class="logo"><a href="https://www.konami.com/wepes/2021/eu/en/ps4/partner/bayern"><img src="partnerlogos/Konami.svg" alt="Konami"></a></div>
+                    <div class="logo"><a href="https://www.paulaner.de/"><img src="partnerlogos/paulaner__148x22.svg" alt="Pauler"></a></div>
+                </div>
+            </div>
+
+            <div class="uefa">
+
+                <div class="left-footer">
+                    <p> &copy; FC Bayern München AG 2000 – 2022</p>
+                    <div>
+                        <a href="https://fcbayern.com/en/imprint">Imprint</a>
+                        <a href="https://fcbayern.com/en/privacy">Privacy Policy</a>
+                        <a href="https://fcbayern.com/en/terms-and-conditions">Terms and Conditions</a>
+                        <a href="https://fcbayern.com/en/faq">FAQ</a>
+                        <a href="https://fcbayern.com/en/contact">Contact</a>
+                        <a href="https://fcbayern.com/kuendigung">Terminate contracts here</a>
+                        <a href="https://fcbayern.com/en">Cookie-Settings</a>
+                    </div>
+                </div>
+
+                <div class="right-logos">
+                    <div class="logo"><a href="https://allianz-arena.com/en"><img src="partnerlogos/Allianzarena.svg" alt=""></a></div>
+                    <div class="logo"><a href="https://www.ecaeurope.com/"><img src="partnerlogos/Eca.svg" alt=""></a></div>
+                    <div class="logo"><a href="https://www.bundesliga.com/en/bundesliga"><img src="partnerlogos/Bundesliga.svg" alt=""></a></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="js/form.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.club-cards .container{
+    margin-bottom: 20px;
+    max-width: 97% !important;
+}
+
+.bottom-cards .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+

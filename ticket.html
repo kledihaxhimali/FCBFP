@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/singInUp.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/ticket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="images/browser-logo.jpg" />
+    <title>Ticket</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="homepage.html"><img src="img/logo.png" alt="">
+                    <h2>FC Bayern Munich</h2>
+                </a>
+            </div>
+            <div class="signUp">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="signInUpForm">
+                                    <div class="title-text">
+                                        <div class="title login">Login </div>
+                                        <div class="title signup">Signup </div>
+                                    </div>
+                                    <div class="form-container">
+                                        <div class="slide-controls">
+                                            <input type="radio" name="slide" id="login" checked>
+                                            <input type="radio" name="slide" id="signup">
+                                            <label for="login" class="slide login">Login</label>
+                                            <label for="signup" class="slide signup">Signup</label>
+                                            <div class="slider-tab"></div>
+                                        </div>
+                                        <div class="form-inner">
+                                            <form action="#" class="login" id="validation-form-logIn">
+
+                                                <div class="field">
+                                                    <input name="email" type="text" placeholder="Email Address"
+                                                        required>
+                                                </div>
+                                                <div class="field">
+                                                    <input name="password" type="password" placeholder="Password"
+                                                        required>
+                                                </div>
+                                                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                                                <div class="field btn">
+                                                    <div class="btn-layer"></div>
+                                                    <input type="submit" value="Login">
+                                                </div>
+                                            </form>
+                                            <form action="#" class="signup" id="validation-form-signUp">
+                                                <div class="field flname">
+                                                    <input name="fname" type="text" placeholder="First Name" required>
+                                                    <input name="lname" type="text" placeholder="Last Name" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="text" placeholder="Email Address" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="password" name="password" id="password"
+                                                        placeholder="Password" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="password" name="confirm_password" id="confirm_password"
+                                                        placeholder="Confirm password" required>
+                                                </div>
+                                                <div>
+                                                    <span id='message'></span>
+                                                </div>
+
+                                                <div class="field btn">
+                                                    <div class="btn-layer"></div>
+                                                    <input type="submit" value="Signup">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-nav">
+        <div class="container">
+            <!-- ul>(li>a)*8 -->
+            <ul>
+                <li><a href="homepage.html">FC Bayern</a></li>
+                <li><a href="fcb-news">News</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="ticket.html">Ticket</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="https://fcbayern.com/store/en-zz?emsrc=coop&refID=header-link%2Fzz">Shopping</a></li>                
+            </ul>
+        </div>
+    </div>
+
+    <div class="titles">
+        <div class="container">
+            <h2>TICKETSHOPS</h2>
+        </div>
+    </div>
+
+    <div class="club-cards">
+        <div class="container">
+            <a href="https://tickets.fcbayern.com/internetverkaufanfragen/EventList.aspx">
+                <div class="card">
+                    <img src="tickets/ticket1.1.jpg" class="card-img-top" alt="gallery-club">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">Season 2022/23</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://tickets.fcbayern.com/internetverkaufzweitmarkt/start.aspx?error=login_required">
+                <div class="card">
+                    <img src="tickets/ticket1.2.jpg" class="card-img-top" alt="history">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">Season 2022/23</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://tickets.fcbayern.com/internetverkauf/EventList.aspx">
+                <div class="card">
+                    <img src="tickets/ticket1.3.jpg" class="card-img-top" alt="fanshop">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">Season 2022/23</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="titles">
+        <div class="container">
+            <h2>TICKET NEWS</h2>
+        </div>
+    </div>
+
+    <div class="club-cards">
+        <div class="container">
+            <a href="https://fcbayern.com/en/tickets/info/matchday-tickets">
+                <div class="card">
+                    <img src="tickets/ticket2.1.jpg" class="card-img-top" alt="gallery-club">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS INFORMATION</h5>
+                        <p class="card-text">Matchday tickets for matches-Season 2022/23</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://fcbayern.com/en/tickets/info/prices-and-concessions">
+                <div class="card">
+                    <img src="tickets/ticket2.2.jpg" class="card-img-top" alt="history">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">Prices and Concension</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://fcbayern.com/en/tickets/info/ticket-brokers">
+                <div class="card">
+                    <img src="tickets/ticket2.3.jpg" class="card-img-top" alt="fanshop">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">Ticket Brokers- Warning and Advices</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="titles">
+        <div class="container">
+            <h2>TICKET INFO</h2>
+        </div>
+    </div>
+
+    <div class="club-cards">
+        <div class="container">
+            <a href="https://fcbayern.com/en/tickets/help-and-support">
+                <div class="card">
+                    <img src="tickets/ticket3.1.jpg" class="card-img-top" alt="history">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">Help and Support</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://fcbayern.com/en/tickets/gtc">
+                <div class="card">
+                    <img src="tickets/ticket3.2.jpg" class="card-img-top" alt="fanshop">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">General Ticket Term and Conditions (GTC) and Documents</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://fcbayern.com/en/tickets/info/customer-information-for-disabled-persons">
+                <div class="card">
+                    <img src="tickets/ticket3.3.jpg" class="card-img-top" alt="gallery-club">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">Costumers Inormation For Disabled Person</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="titles">
+        <div class="container">
+            <h2>FAQS</h2>
+        </div>
+    </div>
+
+    <div class="club-cards lasteniocard">
+        <div class="container">
+            <a href="https://fcbayern.com/en/tickets/info/faq">
+                <div class="card">
+                    <img src="tickets/ticket4.1.jpg" class="card-img-top" alt="gallery-club">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">FAQs- Frequently Asked Question</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://fcbayern.com/en/tickets/info/faq-ticket-exchange">
+                <div class="card">
+                    <img src="tickets/ticket4.2.jpg" class="card-img-top" alt="history">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">FAQ- Questions & Answers on Ticket Exchange</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://fcbayern.com/en/tickets/info/faq---addition-for-new-mobile-ticket">
+                <div class="card">
+                    <img src="tickets/ticket4.3.jpg" class="card-img-top" alt="fanshop">
+                    <div class="card-body">
+                        <h5 class="card-title">TICKETS</h5>
+                        <p class="card-text">FAQ- Addition for New Mobile Ticket</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="bayern-logo">
+                <img src="partnerlogos/fcb-logo.svg" alt="">
+            </div>
+            <div class="partner">
+                <h3>Partner</h3>
+            </div>
+            <div class="partner-grid">
+                <div class="logorow1">
+                    <div class="logo"><a href="https://www.telekom.com/en"><img src="partnerlogos/Telekom (1).svg"
+                                alt="Telekom"></a></div>
+                    <div class="logo"><a href="https://www.adidas.co.uk/football"><img src="partnerlogos/Audi.svg"
+                                alt="Audi"></a></div>
+                    <div class="logo"><a href="https://www.audi.com/en/company/home-of-football.html"><img
+                                src="partnerlogos/Adidas.svg" alt="Adidas"></a></div>
+                    <div class="logo"><a href="https://www.allianz.de/"><img src="partnerlogos/Allianz (2).svg"
+                                alt="Allianz"></a></div>
+                </div>
+                <div class="logorow2">
+                    <div class="logo"><a href="https://www.hypovereinsbank.de/hvb/privatkunden"><img
+                                src="partnerlogos/Hypovereinsbank.svg" alt="Hypovereinsbank"></a></div>
+                    <div class="logo"><a href="https://www.qatarairways.com/en/homepage.html"><img
+                                src="partnerlogos/Qatarairways.svg" alt="Qatarairways"></a></div>
+                    <div class="logo"><a href="https://www.konami.com/wepes/2021/eu/en/ps4/partner/bayern"><img
+                                src="partnerlogos/Konami.svg" alt="Konami"></a></div>
+                    <div class="logo"><a href="https://www.paulaner.de/"><img src="partnerlogos/paulaner__148x22.svg"
+                                alt="Pauler"></a></div>
+                </div>
+            </div>
+
+            <div class="uefa">
+
+                <div class="left-footer">
+                    <p> &copy; FC Bayern München AG 2000 – 2022</p>
+                    <div>
+                        <a href="https://fcbayern.com/en/imprint">Imprint</a>
+                        <a href="https://fcbayern.com/en/privacy">Privacy Policy</a>
+                        <a href="https://fcbayern.com/en/terms-and-conditions">Terms and Conditions</a>
+                        <a href="https://fcbayern.com/en/faq">FAQ</a>
+                        <a href="https://fcbayern.com/en/contact">Contact</a>
+                        <a href="https://fcbayern.com/kuendigung">Terminate contracts here</a>
+                        <a href="https://fcbayern.com/en">Cookie-Settings</a>
+                    </div>
+                </div>
+
+                <div class="right-logos">
+                    <div class="logo"><a href="https://allianz-arena.com/en"><img src="partnerlogos/Allianzarena.svg"
+                                alt=""></a></div>
+                    <div class="logo"><a href="https://www.ecaeurope.com/"><img src="partnerlogos/Eca.svg" alt=""></a>
+                    </div>
+                    <div class="logo"><a href="https://www.bundesliga.com/en/bundesliga"><img
+                                src="partnerlogos/Bundesliga.svg" alt=""></a></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
